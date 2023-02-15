@@ -15,4 +15,6 @@ func InitRouter(r *gin.Engine) {
 	groupRouter.POST("/user/register/", handlers.UserRegister)
 	groupRouter.POST("/user/login/", handlers.UserLogin)
 	groupRouter.GET("/user/", handlers.UserInfo)
+	groupRouter.POST("/publish/action/", handlers.Publish)
+	groupRouter.GET("/publish/list/", handlers.PublishList)
 }
