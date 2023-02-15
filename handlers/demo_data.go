@@ -11,16 +11,6 @@ var DemoVideo = []Video{
 		IsFavorite:    false,
 		Title:         "bear",
 	},
-	{
-		Id:            2,
-		Author:        DemoUser,
-		PlayUrl:       "../public/hello.mp4",
-		CoverUrl:      "../public/hello.jpg",
-		CommentCount:  0,
-		FavoriteCount: 1,
-		IsFavorite:    true,
-		Title:         "hello",
-	},
 }
 
 var DemoUser = User{
