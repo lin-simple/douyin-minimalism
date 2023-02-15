@@ -6,6 +6,8 @@
 >
 > Github  地址，权限设置为 public- 必须
 
+1. GitHub 地址：https://github.com/lin-simple/douyin-minimalism.git
+
 # 二、项目分工
 
 > 好的团队协作可以酌情加分哟～请组长和组员做好项目分工与监督。

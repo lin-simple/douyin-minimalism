@@ -20,3 +20,20 @@ var DemoUser = User{
 	FollowerCount: 0,
 	IsFollow:      false,
 }
+
+var DemoUserLoginInfo = map[string]User{
+	"jack12345678": {
+		Id:            1,
+		Name:          "jack",
+		FollowerCount: 20,
+		FollowCount:   5,
+		IsFollow:      true,
+	},
+	"mike12345678910": {
+		Id:            2,
+		Name:          "mike",
+		FollowerCount: 30,
+		FollowCount:   5,
+		IsFollow:      true,
+	},
+}
