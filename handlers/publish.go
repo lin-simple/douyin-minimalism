@@ -7,7 +7,8 @@ import (
 	"path/filepath"
 )
 
-type PublishListResponse struct {
+//
+type VideoListResponse struct {
 	Response
 	VideoList []Video `json:"video_list,omitempty"`
 }
@@ -45,7 +46,7 @@ func PublishList(c *gin.Context) {
 	// token := c.Query("token")
 	// user_id := c.Query("user_id")
 
-	c.JSON(http.StatusOK, PublishListResponse{
+	c.JSON(http.StatusOK, VideoListResponse{
 		Response:  Response{StatusCode: 0},
 		VideoList: DemoVideo,
 	})
