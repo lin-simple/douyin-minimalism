@@ -18,7 +18,9 @@ func InitRouter(r *gin.Engine) {
 	groupRouter.POST("/publish/action/", handlers.Publish)
 	groupRouter.GET("/publish/list/", handlers.PublishList)
 
-	// extend apis - I
+	// extend apis - I  Interaction
 	groupRouter.POST("/favorite/action/", handlers.FavoriteAction)
 	groupRouter.GET("/favorite/list/", handlers.FavoriteList)
+	groupRouter.POST("/comment/action/", handlers.CommentAction)
+	groupRouter.GET("/comment/list/", handlers.CommentList)
 }

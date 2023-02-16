@@ -21,6 +21,15 @@ var DemoUser = User{
 	IsFollow:      false,
 }
 
+var DemoCommentList = []Comment{
+	{
+		Id:         1,
+		User:       DemoUser,
+		Content:    "This is a test comment.^_^",
+		CreateDate: "2023-02-15",
+	},
+}
+
 var DemoUserLoginInfo = map[string]User{
 	"jack12345678": {
 		Id:            1,
