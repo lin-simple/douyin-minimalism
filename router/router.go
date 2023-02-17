@@ -29,5 +29,6 @@ func InitRouter(r *gin.Engine) {
 	groupRouter.GET("/relation/follow/list/", handlers.FollowList)
 	groupRouter.GET("/relation/follower/list/", handlers.FollowerList)
 	groupRouter.GET("/relation/friend/list/", handlers.FriendList)
-
+	groupRouter.POST("/message/action/", handlers.MessageAction)
+	groupRouter.GET("/message/chat/", handlers.MessageChat)
 }
