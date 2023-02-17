@@ -16,9 +16,13 @@ var DemoVideo = []Video{
 var DemoUser = User{
 	Id:            1,
 	Name:          "TestJack",
-	FollowCount:   0,
-	FollowerCount: 0,
-	IsFollow:      false,
+	FollowCount:   1,
+	FollowerCount: 1,
+	IsFollow:      true,
+}
+
+var DemoUserList = []User{
+	DemoUser,
 }
 
 var DemoCommentList = []Comment{
