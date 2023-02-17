@@ -19,6 +19,7 @@ type UserInfoResponse struct {
 
 var UserIdNum = int64(1)
 
+// 用户注册
 func UserRegister(c *gin.Context) { // 登录和注册共用该结构体
 	username := c.Query("username")
 	password := c.Query("password")
@@ -46,6 +47,7 @@ func UserRegister(c *gin.Context) { // 登录和注册共用该结构体
 	// fmt.Printf("user_id: %d, token: %s", UserIdNum, token)
 }
 
+// 用户登录
 func UserLogin(c *gin.Context) {
 	username := c.Query("username")
 	password := c.Query("password")
@@ -65,6 +67,7 @@ func UserLogin(c *gin.Context) {
 	}
 }
 
+// 用户信息
 func UserInfo(c *gin.Context) {
 	token := c.Query("token")
 

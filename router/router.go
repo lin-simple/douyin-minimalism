@@ -25,7 +25,7 @@ func InitRouter(r *gin.Engine) {
 	groupRouter.GET("/comment/list/", handlers.CommentList)
 
 	// extend apis - II  Social contact
-	groupRouter.POST("/relation/action/", handlers.Follow)
+	groupRouter.POST("/relation/action/", handlers.FollowAction)
 	groupRouter.GET("/relation/follow/list/", handlers.FollowList)
 	groupRouter.GET("/relation/follower/list/", handlers.FollowerList)
 	groupRouter.GET("/relation/friend/list/", handlers.FriendList)

@@ -15,6 +15,7 @@ type CommentListResponse struct {
 	CommentList []Comment `json:"comment_list,omitempty"`
 }
 
+// 评论操作
 func CommentAction(c *gin.Context) {
 	token := c.Query("token")
 	actionType := c.Query("action_type")
@@ -41,6 +42,7 @@ func CommentAction(c *gin.Context) {
 	}
 }
 
+// 评论列表
 // All videos have same demo comment list.
 func CommentList(c *gin.Context) {
 	c.JSON(http.StatusOK, CommentListResponse{

@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// 赞操作
 // Just check token if vaild.
 func FavoriteAction(c *gin.Context) {
 	token := c.Query("token")
@@ -16,6 +17,7 @@ func FavoriteAction(c *gin.Context) {
 	}
 }
 
+// 喜欢列表
 // All users have same favorite video list
 func FavoriteList(c *gin.Context) {
 	c.JSON(http.StatusOK, VideoListResponse{

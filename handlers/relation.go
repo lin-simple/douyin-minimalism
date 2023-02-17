@@ -11,7 +11,7 @@ type UserListResponse struct {
 }
 
 // 关注操作
-func Follow(c *gin.Context) {
+func FollowAction(c *gin.Context) {
 	token := c.Query("token")
 
 	if _, existed := DemoUserLoginInfo[token]; existed {
