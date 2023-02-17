@@ -17,4 +17,18 @@ func InitRouter(r *gin.Engine) {
 	groupRouter.GET("/user/", handlers.UserInfo)
 	groupRouter.POST("/publish/action/", handlers.Publish)
 	groupRouter.GET("/publish/list/", handlers.PublishList)
+
+	// extend apis - I  Interaction
+	groupRouter.POST("/favorite/action/", handlers.FavoriteAction)
+	groupRouter.GET("/favorite/list/", handlers.FavoriteList)
+	groupRouter.POST("/comment/action/", handlers.CommentAction)
+	groupRouter.GET("/comment/list/", handlers.CommentList)
+
+	// extend apis - II  Social contact
+	groupRouter.POST("/relation/action/", handlers.FollowAction)
+	groupRouter.GET("/relation/follow/list/", handlers.FollowList)
+	groupRouter.GET("/relation/follower/list/", handlers.FollowerList)
+	groupRouter.GET("/relation/friend/list/", handlers.FriendList)
+	groupRouter.POST("/message/action/", handlers.MessageAction)
+	groupRouter.GET("/message/chat/", handlers.MessageChat)
 }

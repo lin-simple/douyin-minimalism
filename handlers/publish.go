@@ -7,11 +7,13 @@ import (
 	"path/filepath"
 )
 
-type PublishListResponse struct {
+//
+type VideoListResponse struct {
 	Response
 	VideoList []Video `json:"video_list,omitempty"`
 }
 
+// 投稿
 func Publish(c *gin.Context) {
 	// *注：title 未做请求处理
 	token := c.PostForm("token")
@@ -41,11 +43,12 @@ func Publish(c *gin.Context) {
 	c.JSON(http.StatusOK, Response{StatusCode: 0, StatusMsg: fileFinalName + " upload success."})
 }
 
+// 发布列表
 func PublishList(c *gin.Context) {
 	// token := c.Query("token")
 	// user_id := c.Query("user_id")
 
-	c.JSON(http.StatusOK, PublishListResponse{
+	c.JSON(http.StatusOK, VideoListResponse{
 		Response:  Response{StatusCode: 0},
 		VideoList: DemoVideo,
 	})
